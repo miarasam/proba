@@ -1,0 +1,23 @@
+import rocket
+import random
+r1=rocket.Rocket(random.uniform(-50,50),random.uniform(-50,50))
+r2=rocket.Rocket(random.uniform(-50,50),random.uniform(-50,50))
+r3=rocket.Rocket(random.uniform(-50,50),random.uniform(-50,50))
+r4=rocket.Rocket(random.uniform(-50,50),random.uniform(-50,50))
+r5=rocket.Rocket(random.uniform(-50,50),random.uniform(-50,50))
+for x in range(10):
+    rocket.move(r1,random.random(),random.random())
+    rocket.get_position(r1)
+    rocket.get_distance(r1,r2,r3,r4,r5)
+    rocket.move(r2,random.random(),random.random())
+    rocket.get_position(r2)
+    rocket.get_distance(r2,r1,r3,r4,r5)
+    rocket.move(r3,random.random(),random.random())
+    rocket.get_position(r3)
+    rocket.get_distance(r3,r1,r2,r4,r5)
+    rocket.move(r4,random.random(),random.random())
+    rocket.get_position(r4)
+    rocket.get_distance(r4,r1,r2,r3,r5)
+    rocket.move(r5,random.random(),random.random())
+    rocket.get_position(r5)
+    rocket.get_distance(r5,r1,r2,r3,r4)
